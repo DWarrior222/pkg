@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    /* 基础选项 */
+    "target": "esnext", // 指定ECMAScript目标版本 "ES3"（默认）
+    "module": "esnext", // 指定生成哪个模块系统代码： "CommonJS", "AMD", "System", "UMD", "ES6", "ES2015", "ES2020", "ESNext", "None".
+    "removeComments": true, // 删除所有注释，除了以 /!*开头的版权信息。
+    "sourceMap": true, // 生成相应的 .map文件
+    "declaration": true, // 生成相应的 .d.ts文件。
+    "declarationDir": "dts", // 生成声明文件的输出路径。
+    "locale": "Zh", // 显示错误使用的语言
+    "outDir": "dist", // 输出目录
+    "rootDir": ".", // 用来指定编译文件的根目录
+    // "lib": [], // 用于指定在编译过程中需要包含进来的库文件
+
+    /* 模块解析选项 */
+    // "baseUrl": ".", // 解析非相对模块名的基准目录
+    // "paths": { // 模块名到基于 baseUrl的路径映射的列表
+    // },
+    // "types": ["jest", "puppeteer", "node"],
+    "moduleResolution": "node",
+
+    /* 类型检查选项 */
+    "alwaysStrict": true, // 以严格模式解析并为每个源文件生成 "use strict"语句
+    "noImplicitAny": true, // 在表达式和声明上有隐含的 any类型时报错。
+
+    /* 额外检测选项 */
+    "noImplicitReturns": true, // 不是函数的所有返回路径都有返回值时报错。
+    "noFallthroughCasesInSwitch": true, // 当 switch 中没有使用 break 跳出时报错
+    "noImplicitThis": true, // 当 this 表达式的值为 any 类型时，会生成一个错误
+    "noUnusedLocals": true, // 若有未使用的局部变量则抛错。
+    "noUnusedParameters": true, // 若有未使用的参数则抛错。
+
+    /* 实验选项 */
+    "experimentalDecorators": false, // 启用 ES 装饰器
+  },
+  "include": [
+    "./src/**/*.ts" // 需要编译的ts文件一个*表示文件匹配**表示忽略文件的深度问题
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+  ]
+}
