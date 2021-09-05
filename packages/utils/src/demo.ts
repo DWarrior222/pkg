@@ -1,6 +1,6 @@
-// import { sum } from './index';
+import { sum } from './index';
 
-// sum(1, 2);
+sum(1, 2);
 
 // const a = [1];
 // console.log(a);
