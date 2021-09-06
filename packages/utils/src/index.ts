@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { response } from '../test/inteface'
+import { response, o } from './inteface'
 
 export function sum(v1: number, v2: number): number {
   console.log(v1, v2);
@@ -8,4 +8,62 @@ export function sum(v1: number, v2: number): number {
 
 export async function getTopics(): Promise<response> {
   return await axios.get('https://cnodejs.org/api/v1/topics')
+}
+
+export function replaceAll(): string {
+  const str = 'q=query+string+parameters';
+  const res = str.replaceAll('+', ' ');
+  return res;
+}
+
+export async function promiseAny() {
+  return await Promise.any([
+    Promise.resolve(111),
+    Promise.reject(2),
+    Promise.resolve(3),
+  ]);
+}
+
+export function optionalOperator() {
+  const obj: o = {}
+  return obj?.arr?.length ?? 1
+}
+
+export function budget() {
+  let budget = 1_000_000_000_000
+  return budget === 10 ** 12
+}
+
+export function testClass() {
+  class StaticClassFeatures {
+    static staticField = 'staticField';
+  
+    static callPrivateMethods() {
+      StaticClassFeatures.#privateMethods();
+    }
+  
+    static logPrivateField() {
+      console.log(StaticClassFeatures.#privateField);
+    }
+  
+    static #privateMethods() {
+      console.log('privateMethods');
+    }
+  
+    static #privateField = 'privateField';
+  }
+  
+  console.log(StaticClassFeatures.staticField);
+  StaticClassFeatures.logPrivateField()
+  StaticClassFeatures.callPrivateMethods();
+}
+
+export function arrayIncludes() {
+  return [1, 2, 3, 4].includes(5);
+}
+
+export function gen() {
+  function *gen() {
+  }
+  return  gen()
 }

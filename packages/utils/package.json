@@ -4,13 +4,15 @@
   "description": "",
   "main": "dist/src/index.js",
   "scripts": {
-    "build": "tsc",
-    "build:w": "tsc -w",
+    "build": "echo 'build'",
+    "watch:build": "tsc -p tsconfig.module.json -w",
     "lint": "eslint --ext .ts src/**",
     "lint:f": "eslint --ext .ts src/** --fix",
-    "test": "jest"
+    "test": "jest",
+    "watch:test": "jest --watchAll --coverage"
   },
   "keywords": [],
+  "types": "./dts/src/index.d.ts",
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -21,8 +23,10 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2",
     "jest": "^27.1.0",
+    "rollup": "^2.56.3",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
+    "tslib": "^2.3.1",
     "typescript": "^4.4.2"
   },
   "dependencies": {

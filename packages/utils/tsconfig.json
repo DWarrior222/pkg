@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
     /* 基础选项 */
-    "target": "esnext", // 指定ECMAScript目标版本 "ES3"（默认）
-    "module": "esnext", // 指定生成哪个模块系统代码： "CommonJS", "AMD", "System", "UMD", "ES6", "ES2015", "ES2020", "ESNext", "None".
     "removeComments": true, // 删除所有注释，除了以 /!*开头的版权信息。
     "sourceMap": true, // 生成相应的 .map文件
     "declaration": true, // 生成相应的 .d.ts文件。
     "declarationDir": "dts", // 生成声明文件的输出路径。
-    "locale": "Zh", // 显示错误使用的语言
-    "outDir": "dist", // 输出目录
     "rootDir": ".", // 用来指定编译文件的根目录
-    // "lib": [], // 用于指定在编译过程中需要包含进来的库文件
+    "importHelpers": true,
+    "lib": [
+      "esnext",
+      "es2021.promise",
+      "es2021.string"
+    ], // 用于指定在编译过程中需要包含进来的库文件
 
     /* 模块解析选项 */
     // "baseUrl": ".", // 解析非相对模块名的基准目录
@@ -37,8 +38,8 @@
     "./src/**/*.ts" // 需要编译的ts文件一个*表示文件匹配**表示忽略文件的深度问题
   ],
   "exclude": [
-    "node_modules",
-    "dist",
+    "node_modules/**",
+    "dist/**",
     "**/*.test.ts",
   ]
 }

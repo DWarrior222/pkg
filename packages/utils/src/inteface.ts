@@ -32,3 +32,7 @@ export interface response {
   request: resRequest,
   data?: resData
 }
+
+export interface o {
+  [propName: string]: any
+}

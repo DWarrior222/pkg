@@ -1,1 +1,10 @@
+import { response } from './inteface';
 export declare function sum(v1: number, v2: number): number;
+export declare function getTopics(): Promise<response>;
+export declare function replaceAll(): string;
+export declare function promiseAny(): Promise<number>;
+export declare function optionalOperator(): any;
+export declare function budget(): boolean;
+export declare function testClass(): void;
+export declare function arrayIncludes(): boolean;
+export declare function gen(): Generator<never, void, unknown>;
