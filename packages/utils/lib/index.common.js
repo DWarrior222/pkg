@@ -1,5 +1,5 @@
 /* !
-  * library v0.0.0
+  * library v0.0.1-alpha.0
   * 
   * (c) 2021 gsj
   */

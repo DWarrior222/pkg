@@ -14,8 +14,11 @@
   },
   "keywords": [],
   "types": "./dts/src/index.d.ts",
-  "author": "",
+  "author": "1845543324@qq.com",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-json": "^4.1.0",
