@@ -1,0 +1,11 @@
+build
+node_modules
+.gitignore
+test
+dist
+coverage
+
+tsconfig.json
+tsconfig.module.json
+jest.config.ts
+.eslintrc.js

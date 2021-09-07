@@ -1,10 +1,11 @@
 {
-  "name": "utils",
+  "name": "test-utils",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/src/index.js",
+  "main": "lib/index.common.min.js",
+  "module": "lib/index.es.min.js",
   "scripts": {
-    "build": "echo 'build'",
+    "build": "rollup -c build/build.js",
     "watch:build": "tsc -p tsconfig.module.json -w",
     "lint": "eslint --ext .ts src/**",
     "lint:f": "eslint --ext .ts src/** --fix",
@@ -16,6 +17,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
@@ -24,6 +28,8 @@
     "eslint-plugin-import": "^2.24.2",
     "jest": "^27.1.0",
     "rollup": "^2.56.3",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-uglify": "^6.0.4",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
     "tslib": "^2.3.1",
