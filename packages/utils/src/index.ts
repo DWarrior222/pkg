@@ -1,6 +1,10 @@
 import axios from 'axios'
 import { response, o } from './inteface'
 
+const n: number = 1;
+console.log(n);
+
+
 export function sum(v1: number, v2: number): number {
   console.log(v1, v2);
   return v1 + v2;
