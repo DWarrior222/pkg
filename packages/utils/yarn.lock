@@ -982,10 +982,10 @@ asynckit@^0.4.0:
   resolved "http://192.168.14.11:8888/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-axios@^0.21.3:
-  version "0.21.3"
-  resolved "http://192.168.14.11:8888/axios/-/axios-0.21.3.tgz#f85d9b747f9b66d59ca463605cedf1844872b82e"
-  integrity sha1-+F2bdH+bZtWcpGNgXO3xhEhyuC4=
+axios@^0.21.4:
+  version "0.21.4"
+  resolved "http://192.168.14.11:8888/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha1-xnuQ3AVo5cHPKwuFjEO6KOLtpXU=
   dependencies:
     follow-redirects "^1.14.0"
 
