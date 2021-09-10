@@ -30,7 +30,6 @@ test('sum4', () => {
 test('async', async () => {
   const res: response = await getTopics();
   const { data } = res;
-  
   expect(data).not.toBeUndefined()
   expect(data.success).toBeTruthy()
 })

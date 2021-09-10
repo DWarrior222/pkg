@@ -4,7 +4,11 @@ import { response, o } from './inteface'
 const n: number = 1;
 console.log(n);
 
-
+/**
+ * @param  {number} v1
+ * @param  {number} v2
+ * @returns {number}
+ */
 export function sum(v1: number, v2: number): number {
   console.log(v1, v2);
   return v1 + v2;
@@ -29,12 +33,12 @@ export async function promiseAny() {
 }
 
 export function optionalOperator() {
-  const obj: o = {}
-  return obj?.arr?.length ?? 1
+  const obj: o = { arr: [] }
+  return obj.arr.length ?? 1;
 }
 
 export function budget() {
-  let budget = 1_000_000_000_000
+  const budget = 1_000_000_000_000
   return budget === 10 ** 12
 }
 
@@ -68,6 +72,7 @@ export function arrayIncludes() {
 
 export function gen() {
   function *gen() {
+    yield 1
   }
   return  gen()
 }

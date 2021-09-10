@@ -8,9 +8,7 @@
     "rootDir": ".", // 用来指定编译文件的根目录
     "importHelpers": true,
     "lib": [
-      "esnext",
-      "es2021.promise",
-      "es2021.string"
+      "esnext"
     ], // 用于指定在编译过程中需要包含进来的库文件
 
     /* 模块解析选项 */
