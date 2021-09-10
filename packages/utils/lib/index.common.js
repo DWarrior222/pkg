@@ -1,5 +1,5 @@
 /* !
-  * library v0.0.1-alpha.0
+  * library v0.0.2-alpha.0
   * 
   * (c) 2021 gsj
   */
@@ -73,6 +73,8 @@
         return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
     }
 
+    var n = 1;
+    console.log(n);
     function sum(v1, v2) {
         console.log(v1, v2);
         return v1 + v2;
@@ -107,9 +109,9 @@
         });
     }
     function optionalOperator() {
-        var _a, _b;
-        var obj = {};
-        return (_b = (_a = obj === null || obj === void 0 ? void 0 : obj.arr) === null || _a === void 0 ? void 0 : _a.length) !== null && _b !== void 0 ? _b : 1;
+        var _a;
+        var obj = { arr: [] };
+        return (_a = obj.arr.length) !== null && _a !== void 0 ? _a : 1;
     }
     function budget() {
         var budget = 1000000000000;
@@ -143,7 +145,12 @@
     function gen() {
         function gen() {
             return __generator(this, function (_a) {
-                return [2];
+                switch (_a.label) {
+                    case 0: return [4, 1];
+                    case 1:
+                        _a.sent();
+                        return [2];
+                }
             });
         }
         return gen();
