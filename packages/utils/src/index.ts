@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { response, o } from './inteface'
 
-const n: number = 1;
+const n = 1;
 console.log(n);
 
 /**
