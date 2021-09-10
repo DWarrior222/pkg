@@ -9,7 +9,7 @@
   dependencies:
     "@babel/highlight" "^7.14.5"
 
-"@babel/helper-validator-identifier@^7.14.5", "@babel/helper-validator-identifier@^7.14.9":
+"@babel/helper-validator-identifier@^7.14.5":
   version "7.14.9"
   resolved "https://registry.nlark.com/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.14.9.tgz?cache=0&sync_timestamp=1627804540083&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fhelper-validator-identifier%2Fdownload%2F%40babel%2Fhelper-validator-identifier-7.14.9.tgz#6654d171b2024f6d8ee151bf2509699919131d48"
   integrity sha1-ZlTRcbICT22O4VG/JQlpmRkTHUg=
@@ -22,19 +22,6 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     chalk "^2.0.0"
     js-tokens "^4.0.0"
-
-"@babel/parser@^7.1.0":
-  version "7.15.6"
-  resolved "https://registry.nlark.com/@babel/parser/download/@babel/parser-7.15.6.tgz?cache=0&sync_timestamp=1631216301920&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fparser%2Fdownload%2F%40babel%2Fparser-7.15.6.tgz#043b9aa3c303c0722e5377fef9197f4cf1796549"
-  integrity sha1-BDuao8MDwHIuU3f++Rl/TPF5ZUk=
-
-"@babel/types@^7.0.0", "@babel/types@^7.3.0":
-  version "7.15.6"
-  resolved "https://registry.nlark.com/@babel/types/download/@babel/types-7.15.6.tgz?cache=0&sync_timestamp=1631216362613&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Ftypes%2Fdownload%2F%40babel%2Ftypes-7.15.6.tgz#99abdc48218b2881c058dd0a7ab05b99c9be758f"
-  integrity sha1-mavcSCGLKIHAWN0KerBbmcm+dY8=
-  dependencies:
-    "@babel/helper-validator-identifier" "^7.14.9"
-    to-fast-properties "^2.0.0"
 
 "@gar/promisify@^1.0.1":
   version "1.1.2"
@@ -914,47 +901,6 @@
   resolved "https://registry.npm.taobao.org/@tootallnate/once/download/@tootallnate/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha1-zLkURTYBeaBOf+av94wA/8Hur4I=
 
-"@types/babel-plugin-tester@^9.0.0":
-  version "9.0.4"
-  resolved "https://registry.nlark.com/@types/babel-plugin-tester/download/@types/babel-plugin-tester-9.0.4.tgz#f5f9274149c6c789984f69ae4edbc383e33f679c"
-  integrity sha1-9fknQUnGx4mYT2muTtvDg+M/Z5w=
-  dependencies:
-    "@types/babel__core" "*"
-    "@types/prettier" "*"
-
-"@types/babel__core@*":
-  version "7.1.16"
-  resolved "https://registry.nlark.com/@types/babel__core/download/@types/babel__core-7.1.16.tgz?cache=0&sync_timestamp=1630960457319&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fbabel__core%2Fdownload%2F%40types%2Fbabel__core-7.1.16.tgz#bc12c74b7d65e82d29876b5d0baf5c625ac58702"
-  integrity sha1-vBLHS31l6C0ph2tdC69cYlrFhwI=
-  dependencies:
-    "@babel/parser" "^7.1.0"
-    "@babel/types" "^7.0.0"
-    "@types/babel__generator" "*"
-    "@types/babel__template" "*"
-    "@types/babel__traverse" "*"
-
-"@types/babel__generator@*":
-  version "7.6.3"
-  resolved "https://registry.nlark.com/@types/babel__generator/download/@types/babel__generator-7.6.3.tgz?cache=0&sync_timestamp=1629706734012&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fbabel__generator%2Fdownload%2F%40types%2Fbabel__generator-7.6.3.tgz#f456b4b2ce79137f768aa130d2423d2f0ccfaba5"
-  integrity sha1-9Fa0ss55E392iqEw0kI9LwzPq6U=
-  dependencies:
-    "@babel/types" "^7.0.0"
-
-"@types/babel__template@*":
-  version "7.4.1"
-  resolved "https://registry.nlark.com/@types/babel__template/download/@types/babel__template-7.4.1.tgz?cache=0&sync_timestamp=1629706734879&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fbabel__template%2Fdownload%2F%40types%2Fbabel__template-7.4.1.tgz#3d1a48fd9d6c0edfd56f2ff578daed48f36c8969"
-  integrity sha1-PRpI/Z1sDt/Vby/1eNrtSPNsiWk=
-  dependencies:
-    "@babel/parser" "^7.1.0"
-    "@babel/types" "^7.0.0"
-
-"@types/babel__traverse@*":
-  version "7.14.2"
-  resolved "https://registry.nlark.com/@types/babel__traverse/download/@types/babel__traverse-7.14.2.tgz?cache=0&sync_timestamp=1629706736770&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fbabel__traverse%2Fdownload%2F%40types%2Fbabel__traverse-7.14.2.tgz#ffcd470bbb3f8bf30481678fb5502278ca833a43"
-  integrity sha1-/81HC7s/i/MEgWePtVAieMqDOkM=
-  dependencies:
-    "@babel/types" "^7.3.0"
-
 "@types/minimatch@^3.0.3":
   version "3.0.5"
   resolved "https://registry.nlark.com/@types/minimatch/download/@types/minimatch-3.0.5.tgz?cache=0&sync_timestamp=1629708375365&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fminimatch%2Fdownload%2F%40types%2Fminimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
@@ -974,11 +920,6 @@
   version "4.0.0"
   resolved "https://registry.nlark.com/@types/parse-json/download/@types/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=
-
-"@types/prettier@*":
-  version "2.3.2"
-  resolved "https://registry.nlark.com/@types/prettier/download/@types/prettier-2.3.2.tgz?cache=0&sync_timestamp=1629708789840&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fprettier%2Fdownload%2F%40types%2Fprettier-2.3.2.tgz#fc8c2825e4ed2142473b4a81064e6e081463d1b3"
-  integrity sha1-/IwoJeTtIUJHO0qBBk5uCBRj0bM=
 
 JSONStream@^1.0.4:
   version "1.3.5"
@@ -1157,16 +1098,6 @@ aws4@^1.8.0:
   version "1.11.0"
   resolved "https://registry.nlark.com/aws4/download/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha1-1h9G2DslGSUOJ4Ta9bCUeai0HFk=
-
-babel-plugin-tester@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.nlark.com/babel-plugin-tester/download/babel-plugin-tester-10.1.0.tgz#e099ee1d8dec538439c427a7d12aad132885757b"
-  integrity sha1-4JnuHY3sU4Q5xCen0SqtEyiFdXs=
-  dependencies:
-    "@types/babel-plugin-tester" "^9.0.0"
-    lodash.mergewith "^4.6.2"
-    prettier "^2.0.1"
-    strip-indent "^3.0.0"
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -2833,11 +2764,6 @@ lodash.ismatch@^4.4.0:
   resolved "https://registry.npm.taobao.org/lodash.ismatch/download/lodash.ismatch-4.4.0.tgz#756cb5150ca3ba6f11085a78849645f188f85f37"
   integrity sha1-dWy1FQyjum8RCFp4hJZF8Yj4Xzc=
 
-lodash.mergewith@^4.6.2:
-  version "4.6.2"
-  resolved "https://registry.npm.taobao.org/lodash.mergewith/download/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
-  integrity sha1-YXEh+JrFX1kEfHrsHM1mVMZZD1U=
-
 lodash.template@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npm.taobao.org/lodash.template/download/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
@@ -3670,11 +3596,6 @@ please-upgrade-node@^3.2.0:
   dependencies:
     semver-compare "^1.0.0"
 
-prettier@^2.0.1:
-  version "2.4.0"
-  resolved "https://registry.nlark.com/prettier/download/prettier-2.4.0.tgz#85bdfe0f70c3e777cf13a4ffff39713ca6f64cba"
-  integrity sha1-hb3+D3DD53fPE6T//zlxPKb2TLo=
-
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.npm.taobao.org/process-nextick-args/download/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -4445,11 +4366,6 @@ tmp@^0.0.33:
   integrity sha1-bTQzWIl2jSGyvNoKonfO07G/rfk=
   dependencies:
     os-tmpdir "~1.0.2"
-
-to-fast-properties@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.nlark.com/to-fast-properties/download/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
-  integrity sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
 
 to-regex-range@^5.0.1:
   version "5.0.1"

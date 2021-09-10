@@ -1,10 +1,9 @@
-## 发包流程
+## 发包
 
-> https://lerna.js.org/
+yarn release
+或
+npm run release
 
-```
-lerna bootstrap
+https://lerna.js.org/
 
-lerna publish
-```
 
