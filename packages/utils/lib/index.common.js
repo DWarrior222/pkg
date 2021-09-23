@@ -1,5 +1,5 @@
 /* !
-  * library v0.0.3-alpha.0
+  * library v0.0.4-alpha.0
   * 
   * (c) 2021 gsj
   */
@@ -39,102 +39,66 @@
         });
     }
 
-    function __generator(thisArg, body) {
-        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-        function verb(n) { return function (v) { return step([n, v]); }; }
-        function step(op) {
-            if (f) throw new TypeError("Generator is already executing.");
-            while (_) try {
-                if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-                if (y = 0, t) op = [op[0] & 2, t.value];
-                switch (op[0]) {
-                    case 0: case 1: t = op; break;
-                    case 4: _.label++; return { value: op[1], done: false };
-                    case 5: _.label++; y = op[1]; op = [0]; continue;
-                    case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                    default:
-                        if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                        if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                        if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                        if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                        if (t[2]) _.ops.pop();
-                        _.trys.pop(); continue;
-                }
-                op = body.call(thisArg, _);
-            } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-            if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-        }
-    }
-
     function __classPrivateFieldGet(receiver, state, kind, f) {
         if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
         if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
         return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
     }
 
-    var n = 1;
+    const n = 1;
     console.log(n);
     function sum(v1, v2) {
         console.log(v1, v2);
         return v1 + v2;
     }
     function getTopics() {
-        return __awaiter(this, void 0, Promise, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4, axios__default['default'].get('https://cnodejs.org/api/v1/topics')];
-                    case 1: return [2, _a.sent()];
-                }
-            });
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield axios__default['default'].get('https://cnodejs.org/api/v1/topics');
         });
     }
     function replaceAll() {
-        var str = 'q=query+string+parameters';
-        var res = str.replaceAll('+', ' ');
+        const str = 'q=query+string+parameters';
+        const res = str.replaceAll('+', ' ');
         return res;
     }
     function promiseAny() {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4, Promise.any([
-                            Promise.resolve(111),
-                            Promise.reject(2),
-                            Promise.resolve(3),
-                        ])];
-                    case 1: return [2, _a.sent()];
-                }
-            });
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield Promise.any([
+                Promise.resolve(111),
+                Promise.reject(2),
+                Promise.resolve(3),
+            ]);
         });
     }
     function optionalOperator() {
         var _a;
-        var obj = { arr: [] };
+        const obj = { arr: [] };
         return (_a = obj.arr.length) !== null && _a !== void 0 ? _a : 1;
     }
     function budget() {
-        var budget = 1000000000000;
+        const budget = 1000000000000;
         return budget === Math.pow(10, 12);
     }
     function testClass() {
-        var StaticClassFeatures = (function () {
-            function StaticClassFeatures() {
-            }
-            StaticClassFeatures.callPrivateMethods = function () {
+        var _a, _StaticClassFeatures_privateMethods, _StaticClassFeatures_privateField;
+        class StaticClassFeatures {
+            static callPrivateMethods() {
                 __classPrivateFieldGet(StaticClassFeatures, _a, "m", _StaticClassFeatures_privateMethods).call(StaticClassFeatures);
-            };
-            StaticClassFeatures.logPrivateField = function () {
+            }
+            static logPrivateField() {
                 console.log(__classPrivateFieldGet(StaticClassFeatures, _a, "f", _StaticClassFeatures_privateField));
-            };
-            var _a, _StaticClassFeatures_privateMethods, _StaticClassFeatures_privateField;
-            _a = StaticClassFeatures, _StaticClassFeatures_privateMethods = function _StaticClassFeatures_privateMethods() {
-                console.log('privateMethods');
-            };
-            StaticClassFeatures.staticField = 'staticField';
-            _StaticClassFeatures_privateField = { value: 'privateField' };
-            return StaticClassFeatures;
-        }());
+            }
+        }
+        _a = StaticClassFeatures, _StaticClassFeatures_privateMethods = function _StaticClassFeatures_privateMethods() {
+            console.log('privateMethods');
+        };
+        Object.defineProperty(StaticClassFeatures, "staticField", {
+            enumerable: true,
+            configurable: true,
+            writable: true,
+            value: 'staticField'
+        });
+        _StaticClassFeatures_privateField = { value: 'privateField' };
         console.log(StaticClassFeatures.staticField);
         StaticClassFeatures.logPrivateField();
         StaticClassFeatures.callPrivateMethods();
@@ -143,15 +107,8 @@
         return [1, 2, 3, 4].includes(5);
     }
     function gen() {
-        function gen() {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4, 1];
-                    case 1:
-                        _a.sent();
-                        return [2];
-                }
-            });
+        function* gen() {
+            yield 1;
         }
         return gen();
     }
