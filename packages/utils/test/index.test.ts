@@ -1,5 +1,5 @@
 import { expect, test } from '@jest/globals'
-import { sum, getTopics, arrayIncludes, gen } from '../src/index'
+import { sum, getTopics, arrayIncludes, gen, replaceAll, promiseAny } from '../src/index'
 import { response } from '../src/inteface'
 
 test('sum1', () => {
@@ -18,14 +18,14 @@ test('sum4', () => {
   expect(sum(undefined, 1)).toBe(NaN)
 })
 
-// test('replaceAll', () => {
-//   expect(replaceAll()).toBe('q=query string parameters')
-// })
+test('replaceAll', () => {
+  expect(replaceAll()).toBe('q=query string parameters')
+})
 
-// test('promiseAny', async () => {
-//   const data = await promiseAny();
-//   expect(data).toBe(111);
-// })
+test('promiseAny', async () => {
+  const data = await promiseAny();
+  expect(data).toBe(111);
+})
 
 test('async', async () => {
   const res: response = await getTopics();

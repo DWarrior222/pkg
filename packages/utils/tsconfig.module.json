@@ -1,9 +1,0 @@
-{
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "target": "esnext", // 指定ECMAScript目标版本
-    "outDir": "dist/module", // 输出目录
-    "module": "esnext",  // 指定生成哪个模块系统代码
-    "useDefineForClassFields": true
-  }
-}

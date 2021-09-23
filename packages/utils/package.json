@@ -6,7 +6,7 @@
   "module": "lib/index.es.min.js",
   "scripts": {
     "build": "rollup -c build/build.js",
-    "watch:build": "tsc -p tsconfig.module.json -w",
+    "watch:build": "tsc -p tsconfig.json -w",
     "lint": "eslint --ext .ts src/** --fix",
     "test": "jest",
     "watch:test": "jest --watchAll --coverage",
