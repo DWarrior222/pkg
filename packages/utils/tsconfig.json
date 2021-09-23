@@ -6,14 +6,27 @@
     "declaration": true, // 生成相应的 .d.ts文件。
     "declarationDir": "dts", // 生成声明文件的输出路径。
     "rootDir": ".", // 用来指定编译文件的根目录
-    "importHelpers": true,
+    "importHelpers": true, // 从 tslib 导入辅助工具函数，所以使用此选项续安装 tslib: yarn add tslib -D
     "lib": [
-      "esnext"
+      "esnext" /*
+        像 Promise.any、 String.prototype.replaceAll、 静态私有方法和变量等等新的es特性(提案)，在编译时需要从 esnext 导入辅助函数
+        静态私有方法和变量：https://github.com/tc39/proposal-class-fields
+        Promise.any：https://github.com/tc39/proposal-promise-any
+        String.prototype.replaceAll：https://github.com/tc39/proposal-string-replaceall
+      */
     ], // 用于指定在编译过程中需要包含进来的库文件
-    "target": "es2015", // 指定ECMAScript目标版本
+    "target": "es2015", /* 
+      指定编译后代码的ES版本
+      也就是将源代码所使用语法 编译成 target 支持的语法
+      问题：暂不支持 api 的 polyfill
+    */
     "outDir": "dist", // 输出目录
     "module": "esnext",  // 指定生成哪个模块系统代码
-    "useDefineForClassFields": true,
+    "useDefineForClassFields": true, /* 
+      使用定义类字段; 
+      https://www.typescriptlang.org/tsconfig#useDefineForClassFields
+      在设置了 target: esnext，并且源码中为 类的私有静态字段设置初始值，就要设置 useDefineForClassFields
+    */
 
     /* 模块解析选项 */
     // "baseUrl": ".", // 解析非相对模块名的基准目录
@@ -21,6 +34,7 @@
     // },
     // "types": ["jest", "puppeteer", "node"],
     "moduleResolution": "node",
+    "esModuleInterop": true /* 通过为导入内容创建命名空间，实现CommonJS和ES模块之间的互操作性 */,
 
     /* 类型检查选项 */
     "alwaysStrict": true, // 以严格模式解析并为每个源文件生成 "use strict"语句

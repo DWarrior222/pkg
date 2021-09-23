@@ -1,5 +1,5 @@
 /* !
-  * library v0.0.4-alpha.0
+  * library v0.0.5-alpha.0
   * 
   * (c) 2021 gsj
   */
@@ -8,7 +8,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('axios')) :
     typeof define === 'function' && define.amd ? define(['exports', 'axios'], factory) :
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.library = {}, global.axios));
-}(this, (function (exports, axios) { 'use strict';
+})(this, (function (exports, axios) { 'use strict';
 
     function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -53,7 +53,7 @@
     }
     function getTopics() {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield axios__default['default'].get('https://cnodejs.org/api/v1/topics');
+            return yield axios__default["default"].get('https://cnodejs.org/api/v1/topics');
         });
     }
     function replaceAll() {
@@ -125,4 +125,4 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-})));
+}));
