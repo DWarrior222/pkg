@@ -11,7 +11,7 @@
       "esnext"
     ], // 用于指定在编译过程中需要包含进来的库文件
     "target": "es2015", // 指定ECMAScript目标版本
-    "outDir": "dist/module", // 输出目录
+    "outDir": "dist", // 输出目录
     "module": "esnext",  // 指定生成哪个模块系统代码
     "useDefineForClassFields": true,
 
