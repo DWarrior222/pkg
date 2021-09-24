@@ -14,15 +14,18 @@ export default {
   // cacheDirectory: "/private/var/folders/50/byvvxw5j5992hkb8bhj2r_1r0000gn/T/jest_dx",
 
   // Automatically clear mock calls and instances between every test
+  // 清除测试模拟的实例
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
+  // 执行测试时是否应收集覆盖率信息
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
+  // 覆盖率报告输出的目录
   coverageDirectory: "coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
@@ -138,7 +141,9 @@ export default {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "jest-environment-node",
+  // 用于测试的测试环境，如果源码中有 browser code，比如：window、document，则需要设置 jest-environment-jsdom
+  // default：node；可设置 jest-environment-jsdom、jest-environment-node
+  testEnvironment: "jest-environment-jsdom",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -175,6 +180,7 @@ export default {
 
   // A map from regular expressions to paths to transformers
   // 一种转换器配置, 由于 Jest 默认的转换器不支持 TypeScript，因此需要 ts-jest 工具把 .ts 和 .tsx 文件内容转换成 js
+  // 需要安装 ts-jest npm install ts-jest -D
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },

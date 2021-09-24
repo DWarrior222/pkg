@@ -8,6 +8,7 @@
     "rootDir": ".", // 用来指定编译文件的根目录
     "importHelpers": true, // 从 tslib 导入辅助工具函数，所以使用此选项续安装 tslib: yarn add tslib -D
     "lib": [
+      "dom",
       "esnext" /*
         像 Promise.any、 String.prototype.replaceAll、 静态私有方法和变量等等新的es特性(提案)，在编译时需要从 esnext 导入辅助函数
         静态私有方法和变量：https://github.com/tc39/proposal-class-fields

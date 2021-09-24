@@ -4,6 +4,8 @@ import { response, o } from './inteface'
 const n = 1;
 console.log(n);
 
+console.log(window, document);
+
 /**
  * @param  {number} v1
  * @param  {number} v2
