@@ -4,9 +4,9 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-com-lib/
 output/
 coverage
+**/lib/
 
 # Editor directories and files
 .idea
